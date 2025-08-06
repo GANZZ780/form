@@ -1,109 +1,181 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <body>
-        
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran Siswa Baru</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-top: 30px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 120px;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    fieldset {
+      border: none;
+      padding: 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      background-color: #3498db;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    audio {
+      display: block;
+      margin: 20px auto;
+    }
+
+    table {
+      width: 80%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+  </style>
 </head>
-<h1><center>folmulir pendaftaran siswa baru</h1>
-<center><img src="logo-si.png" alt="" style="width: 15%;">
-<p>silahkan isi formulir di bawah ini dengan data yang benar dan lengkap</p>
+<body>
 
+  <h1>Formulir Pendaftaran Siswa Baru</h1>
 
+  <img src="logo-si.png" alt="Logo Sekolah">
 
+  <p>Silakan isi formulir di bawah ini dengan data yang benar dan lengkap</p>
 
-
-
-
-
-<form action="table.html">
+  <form action="table.html">
     <fieldset>
+      <p><strong>Data Siswa</strong></p>
 
+      <label>Password</label>
+      <input type="password" name="password" id="password" placeholder="Masukkan password">
 
-<p><b>data siswa</b></p>
-    
-    <p>
-        <label>password</label>
-        <input type="password" name="password" id="password" placeholder="password">
-        
-    </p>
-        <label> mobile number or email</label>
-        <input type="text" name="email" id="email" placeholder="mobile number email">
-    <p>
-        <label>full name</label>
-        <input type="text" name="full name" id="full name" placeholder="full name">
-    </p>
-    <p>
-        <label>kelamin</label>
-        <select name="kelamin" id="kelamin">
-            <option value="laki laki">laki laki</option>
-            <option value="perempuan">perempuan</option>
-            <option value="ultraman ">ultraman</option>
-        </select>
+      <label>Mobile Number atau Email</label>
+      <input type="text" name="email" id="email" placeholder="Nomor HP atau Email">
 
-    </p>
-    <p>
-        <label>alamat</label>
-        <input type="text" name="alamat" id="alamat" placeholder="alamat">
-    </p>
-    <p>
-        <label for="tanggal">tanggal lahir</label>
-        <input type="date" name="tanggal" id="tanggal">
-    </p>
-    <p>
-        <label>alamat</label>
-        <input type="text" name="alamat" id="alamat" placeholder="alamat">
-    </p>
-     </p>
-    <p>by signing up, you agree to our terms , privacy policy and cookies policiy.</p>
-    <button type="subemit"> sign up</button>
+      <label>Full Name</label>
+      <input type="text" name="full_name" id="full_name" placeholder="Nama lengkap">
 
-    
+      <label>Jenis Kelamin</label>
+      <select name="kelamin" id="kelamin">
+        <option value="laki-laki">Laki-laki</option>
+        <option value="perempuan">Perempuan</option>
+        <option value="ultraman">Ultraman</option>
+      </select>
+
+      <label>Alamat</label>
+      <input type="text" name="alamat" id="alamat" placeholder="Alamat rumah">
+
+      <label>Tanggal Lahir</label>
+      <input type="date" name="tanggal" id="tanggal">
+
+      <p style="font-size: 13px;">Dengan mendaftar, Anda setuju dengan <u>Syarat</u>, <u>Kebijakan Privasi</u>, dan <u>Cookies Policy</u>.</p>
+
+      <button type="submit">Sign Up</button>
     </fieldset>
+  </form>
 
-    </form>
+  <p>Putar audio berikut ini</p>
+  <fieldset>
+    <audio controls loop autoplay src="bel.mp3"></audio>
+  </fieldset>
 
-    <p>putar audio berikut ini</p>
-<fieldset>
-<audio controls loop autoplay src="bel.mp3"></audio>
-</fieldset>
-
-<table border="1">
-        <tr>
-            <th colspan="1" bgcolor="blue">no</th>
-            <th colspan="1" bgcolor="blue">jurusan</th>
-             <th colspan="2" bgcolor="blue">keterangan</th>
-        </tr>
-        <tr>
-            <th>1</th>
-            <th>rpl</th>
-            <th>rekayasa perangkat lunak</th>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>tkj</td>
-            <td>teknik komputer jaringan</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>mm</td>
-            <td>multi media</td>
-        </tr>
-        
-    </table>
+  <table>
+    <tr>
+      <th>No</th>
+      <th>Jurusan</th>
+      <th>Keterangan</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>RPL</td>
+      <td>Rekayasa Perangkat Lunak</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>TKJ</td>
+      <td>Teknik Komputer Jaringan</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>MM</td>
+      <td>Multimedia</td>
+    </tr>
+  </table>
 
 </body>
 </html>
 
-        
 
-
-    
-</body>
-</html>
 
 
 
